@@ -73,7 +73,7 @@ body {
 
 @keyframes wrongAnimation {
   100% {
-    border: 2px solid white;
+    border: 1px solid white;
   }
 }
 
