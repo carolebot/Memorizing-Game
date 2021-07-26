@@ -1,59 +1,12 @@
 body {
-  background-color: rgb(117, 139, 153);
-}
-
-#cards {
-  display: flex;
-  flex-wrap: wrap;
-  width: 85%;
-  margin: 0 auto;
-}
-
-.card {
-  /* 卡片在容器裡的排版 */
-  box-sizing: border-box;
-  flex: 7% 1 1; 
-  height: 8vw;
-  border: 1px solid #e0e0e0;
-  margin: 2px;
-  /* 卡片內部元素排版 */
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.card img {
-  max-width: 30%;
-  align-self: center;
-}
-
-
-.card p {
-  /* 瀏覽器預設margin使得數字超出 縮小margin */
-  margin: 3px;
-  font-size: 10px;
-}
-
-.card p:last-child {
-  transform: rotate(180deg);
-
-}
-
-
-.back {
-  background: url('https://img.stickers.cloud/packs/68493001-37b7-476e-b1b1-9143ad8fa245/webp/79582a15-c07d-40d3-9634-73791883ecd3.webp');
-  background-size:cover;
-}
-
-
-.paired {
-  background-color: #dae0e3;
+  background-color: #d1d1d1;
 }
 
 #header {
   display: flex;
   flex-direction: column;
-  align-items:flex-end;
-  margin-right:70px;
+  align-items: flex-end;
+  margin-right: 70px;
 }
 
 #header .title {
@@ -69,6 +22,49 @@ body {
   width: 3em;
 }
 
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  /* 卡片在容器裡的排版 */
+  box-sizing: border-box;
+  flex: 7% 1 1;
+  height: 8vw;
+  border: 1px solid #e0e0e0;
+  margin: 2px;
+  /* 卡片內部元素排版 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card img {
+  max-width: 30%;
+  align-self: center;
+}
+
+.card p {
+  margin: 3px; /* 瀏覽器預設 縮小margin不讓數字超出*/
+  font-size: 15px;
+}
+
+.card p:last-child {
+  transform: rotate(180deg);
+}
+
+.back {
+  background: url("https://img.stickers.cloud/packs/68493001-37b7-476e-b1b1-9143ad8fa245/webp/79582a15-c07d-40d3-9634-73791883ecd3.webp");
+  background-size: cover;
+}
+
+.paired {
+  background-color: whitesmoke;
+}
+
 .wrong {
   animation-name: wrongAnimation;
   animation-duration: 0.2s;
@@ -77,7 +73,7 @@ body {
 
 @keyframes wrongAnimation {
   100% {
-    border: 1px solid #ffd54f;
+    border: 2px solid white;
   }
 }
 
@@ -90,12 +86,14 @@ body {
   width: 100vw;
   padding: 50px 0;
 }
+
 .completed > p {
   font-size: 1.5em;
   color: black;
   text-align: center;
   margin: 0;
 }
+
 .completed > p:first-child {
   font-size: 3em;
   font-weight: 700;
