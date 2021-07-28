@@ -1,5 +1,6 @@
 # Memorizing game
 A simple traditional game: if 26 pairs are matched, this game will be finished.
+https://carolebot.github.io/Memorizing-Game/
 
 ## How to play
 - There are 52 cards (a deck of cards) 
